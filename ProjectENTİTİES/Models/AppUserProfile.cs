@@ -13,7 +13,7 @@ namespace ProjectENTİTİES.Models
         
         // Relational Properties
 
-        public virtual AppUserProfile Profile { get; set; }
+        public virtual AppUser AppUser { get; set; }
 
 
     }
