@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjectENTİTİES.Models;
+using ProjectMAP.Options;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,5 +15,23 @@ namespace ProjectDAL.Context
         {
 
         }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new AppUserMap());
+            modelBuilder.Configurations.Add(new CategoryMap());
+            modelBuilder.Configurations.Add(new ProfileMap());
+            modelBuilder.Configurations.Add(new ProductMap());
+            modelBuilder.Configurations.Add(new OrderMap());
+            modelBuilder.Configurations.Add(new OrderDetailMap());
+        }
+
+        public DbSet<AppUserMap> AppUsers { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<AppUserProfile> Profiles { get; set; }
+
     }
 }

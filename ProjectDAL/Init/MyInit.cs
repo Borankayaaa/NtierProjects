@@ -17,8 +17,15 @@ namespace ProjectDAL.Init
             #region Admin
 
             AppUser au = new AppUser();
-            au.UserName = "cgr";
+            au.UserName = "brn";
             au.Password = DantexCrypt.Crypt("123");
+            au.Email = "borankaya210@gmail.com";
+            au.Role = ProjectENTİTİES.Enums.UserRole.Admin;
+            au.Active = true;
+            context.AppUsers.Add(au);
+            context.SaveChanges();
+           
+
 
 
 
