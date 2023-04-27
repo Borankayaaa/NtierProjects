@@ -1,4 +1,5 @@
-﻿using ProjectENTİTİES.Models;
+﻿using ProjectDAL.Init;
+using ProjectENTİTİES.Models;
 using ProjectMAP.Options;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace ProjectDAL.Context
     {
         public MyContext(): base("MyConnection")
         {
+            Database.SetInitializer(new MyInit());
 
         }
 
