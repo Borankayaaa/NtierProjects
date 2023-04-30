@@ -80,11 +80,6 @@ namespace Project.COMMON.Tools
                     decryptedCode += character3;
                 }
 
-
-
-
-
-
             }
             return decryptedCode;
 
