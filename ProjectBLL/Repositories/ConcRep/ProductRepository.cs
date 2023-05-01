@@ -1,4 +1,5 @@
-﻿using ProjectENTİTİES.Models;
+﻿using ProjectBLL.Repositories.BaseRep;
+using ProjectENTİTİES.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
