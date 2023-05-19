@@ -31,10 +31,10 @@ namespace ProjectCOMMON.Tools
             using (MailMessage message = new MailMessage(senderEmail, receiverEmail)
             {
                 Subject = subject,
-                Body = body,
+                Body = body
             }) 
             {
-                smtp.Send( message );
+                smtp.Send(message);
             }
         }
     }

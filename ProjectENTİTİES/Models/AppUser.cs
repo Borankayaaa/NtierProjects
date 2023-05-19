@@ -20,5 +20,11 @@ namespace ProjectENTİTİES.Models
 
         public virtual AppUserProfile Profile { get; set; }
         public virtual List<Order> Orders { get; set; }
+
+        public AppUser() 
+        {
+            Role = UserRole.Member;
+            ActivationCode = Guid.NewGuid();
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace ProjectMVCUI.Controllers
         {
           
         }
-        public ActionResult Index()
+        public ActionResult Login()
         {
            
             return View();
