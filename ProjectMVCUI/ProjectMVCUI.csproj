@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Data\AdminPageVMs\AdminCategoryListPageVM.cs" />
     <Compile Include="AuthenticetionClasses\AdminAuthentication.cs" />
     <Compile Include="AuthenticetionClasses\MemberAuthentication.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\AdminScripts\AdminCategoryDTJ.js" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -1981,6 +1983,8 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Category\ListCategories.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\AddCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\UpdateCategory.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2009,7 +2013,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Data\" />
     <Folder Include="OuterTools\assets\jquery-file-upload\server\php\files\thumbnail\" />
   </ItemGroup>
   <ItemGroup>
