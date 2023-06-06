@@ -130,6 +130,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Data\AdminPageVMs\AdminAddUpdateProductPageVM.cs" />
     <Compile Include="Areas\Admin\Data\AdminPageVMs\AdminCategoryListPageVM.cs" />
     <Compile Include="AuthenticetionClasses\AdminAuthentication.cs" />
     <Compile Include="AuthenticetionClasses\MemberAuthentication.cs" />
@@ -1988,6 +1989,8 @@
     <Content Include="Areas\Admin\Views\Category\ListCategories.cshtml" />
     <Content Include="Areas\Admin\Views\Category\AddCategory.cshtml" />
     <Content Include="Areas\Admin\Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\AddProduct.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\UpdateProduct.cshtml" />
     <Content Include="Areas\Admin\Views\Product\ListProducts.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

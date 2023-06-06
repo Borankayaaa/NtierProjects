@@ -7,9 +7,9 @@ using System.Web;
 
 namespace ProjectMVCUI.Areas.Admin.Data.AdminPageVMs
 {
-    public class AdminCategoryListPageVM
+    public class AdminAddUpdateProductPageVM
     {
+        public Product Product { get; set; }
         public List<AdminCategoryVM> Categories { get; set; }
-        public List<Product>Products { get; set; }
     }
 }
